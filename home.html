@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Adoption Center</title>
+    <style>
+        body, h1 {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background-color: #f9f9f9;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 0.5em 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 1em;
+            text-decoration: none;
+            padding: 0.5em 1em;
+        }
+        nav a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+        .gallery-section {
+            padding: 2em 0;
+            background-color: white;
+        }
+        .gallery-section h2 {
+            text-align: center;
+            margin-bottom: 1em;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em;
+            justify-content: center;
+        }
+        .gallery-item {
+            width: calc(25% - 1em);
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        @media (max-width: 768px) {
+            .gallery-item {
+                width: calc(50% - 1em);
+            }
+        }
+        @media (max-width: 480px) {
+            .gallery-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cat Adoption Center</h1>
+        <nav>
+            <a href="home.html">Home</a>
+                <a href="botona.html">Available Cats</a>
+                <a href="adop prc.html">Adoption Process</a>
+                <a href="race.html">Cat Breeds Information</a>
+                <a href="conta.html">Contact Us</a>
+                <a href="about.html">About us</a>
+
+        </nav>
+    </header>
+
+    <section id="home" class="gallery-section">
+        <h2>Welcome to the Cat Adoption Center</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="1.jpeg" alt="Cat 1">
+            </div>
+            <div class="gallery-item">
+                <img src="2.jpeg" alt="Cat 2">
+            </div>
+            <div class="gallery-item">
+                <img src="3.jpeg" alt="Cat 3">
+            </div>
+            <div class="gallery-item">
+                <img src="4.jpeg" alt="Cat 4">
+            </div>
+            <div class="gallery-item">
+                <img src="5.jpeg" alt="Cat 5">
+            </div>
+            <div class="gallery-item">
+                <img src="6.jpeg" alt="Cat 6">
+            </div>
+            <div class="gallery-item">
+                <img src="7.jpeg" alt="Cat 7">
+            </div>
+            <div class="gallery-item">
+                <img src="8.jpeg" alt="Cat 8">
+            </div>
+            <div class="gallery-item">
+                <img src="9.jpeg" alt="Cat 9">
+            </div>
+            <div class="gallery-item">
+                <img src="10.jpeg" alt="Cat 10">
+            </div>
+            <!-- Add more gallery items as needed -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>Email: info@catbreeds.com</p>
+            <p>Phone: +1 (123) 456-7890</p>
+        </div>
+        <div class="additional-info">
+            <h3>Additional Information</h3>
+            <p>Address: 123 Cat Street, Meowville</p>
+            <p>Hours: Monday - Friday, 9:00 AM - 5:00 PM</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

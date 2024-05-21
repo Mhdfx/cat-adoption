@@ -1,0 +1,238 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Adoption Center</title>
+    <style>
+        body, h1, h2, h3, p, ul {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background-color: #f9f9f9;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 0.5em 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 1em;
+            text-decoration: none;
+            padding: 0.5em 1em;
+        }
+        nav a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+        .hero-section {
+            background: url('hero.jpg') no-repeat center center/cover;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 4em 0;
+        }
+        .hero-section h2 {
+            font-size: 2.5em;
+        }
+        .hero-section p {
+            font-size: 1.2em;
+        }
+        .hero-section .btn {
+            display: inline-block;
+            padding: 0.75em 1.5em;
+            background-color: #444;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            margin-top: 1em;
+            border-radius: 5px;
+        }
+        .hero-section .btn:hover {
+            background-color: #555;
+        }
+        .cats-section {
+            padding: 2em 0;
+            background-color: white;
+        }
+        .cats-section h2 {
+            text-align: center;
+            margin-bottom: 1em;
+        }
+        .cats-section .cat-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em;
+            justify-content: center;
+        }
+        .cats-section .cat-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            width: calc(25% - 1em);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .cats-section .cat-item img {
+            width: 100%;
+            height: auto;
+        }
+        .cats-section .cat-info {
+            padding: 1em;
+        }
+        .cats-section .cat-info .btn {
+            display: inline-block;
+            padding: 0.5em 1em;
+            background-color: #444;
+            color: white;
+            text-decoration: none;
+            margin-top: 1em;
+            border-radius: 5px;
+        }
+        .cats-section .cat-info .btn:hover {
+            background-color: #555;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        @media (max-width: 768px) {
+            .cats-section .cat-item {
+                width: calc(50% - 1em);
+            }
+        }
+        @media (max-width: 480px) {
+            .cats-section .cat-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cat Adoption Center</h1>
+        <nav>
+            <a href="home.html">Home</a>
+                <a href="botona.html">Available Cats</a>
+                <a href="adop prc.html">Adoption Process</a>
+                <a href="race.html">Cat Breeds Information</a>
+                <a href="conta.html">Contact Us</a>
+                <a href="about.html">about us</a>
+        </nav>
+    </header>
+    <style>
+        body, h1, h2, p {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background-color: #f9f9f9;
+            line-height: 1.6;
+        }
+        
+        .form-container {
+            background-color: white;
+            max-width: 600px;
+            margin: 2em auto;
+            padding: 2em;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-container h2 {
+            margin-bottom: 1em;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 1em;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5em;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 0.5em;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .form-group input[type="submit"] {
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: #555;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 2em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Adoption Form</h2>
+        <form action="submit_form.php" method="post">
+            <div class="form-group">
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full_name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>Email: info@catbreeds.com</p>
+            <p>Phone: +1 (123) 456-7890</p>
+        </div>
+        <div class="additional-info">
+            <h3>Additional Information</h3>
+            <p>Address: 123 Cat Street, Meowville</p>
+            <p>Hours: Monday - Friday, 9:00 AM - 5:00 PM</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Adoption Center</title>
+    <style>
+        body, h1, h2, h3, p, ul {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background-color: #f9f9f9;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 0.5em 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 1em;
+            text-decoration: none;
+            padding: 0.5em 1em;
+        }
+        nav a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+        .hero-section {
+            background: url('hero.jpg') no-repeat center center/cover;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 4em 0;
+        }
+        .hero-section h2 {
+            font-size: 2.5em;
+        }
+        .hero-section p {
+            font-size: 1.2em;
+        }
+        .hero-section .btn {
+            display: inline-block;
+            padding: 0.75em 1.5em;
+            background-color: #444;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            margin-top: 1em;
+            border-radius: 5px;
+        }
+        .hero-section .btn:hover {
+            background-color: #555;
+        }
+        .cats-section {
+            padding: 2em 0;
+            background-color: white;
+        }
+        .cats-section h2 {
+            text-align: center;
+            margin-bottom: 1em;
+        }
+        .cats-section .cat-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em;
+            justify-content: center;
+        }
+        .cats-section .cat-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            width: calc(25% - 1em);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .cats-section .cat-item img {
+            width: 100%;
+            height: auto;
+        }
+        .cats-section .cat-info {
+            padding: 1em;
+        }
+        .cats-section .cat-info .btn {
+            display: inline-block;
+            padding: 0.5em 1em;
+            background-color: #444;
+            color: white;
+            text-decoration: none;
+            margin-top: 1em;
+            border-radius: 5px;
+        }
+        .cats-section .cat-info .btn:hover {
+            background-color: #555;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        @media (max-width: 768px) {
+            .cats-section .cat-item {
+                width: calc(50% - 1em);
+            }
+        }
+        @media (max-width: 480px) {
+            .cats-section .cat-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cat Adoption Center</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="botona.html">Available Cats</a>
+            <a href="adop prc.html">Adoption Process</a>
+            <a href="race.html">Cat Breeds Information</a>
+            <a href="conta.html">Contact Us</a>
+            <a href="about.html">About us</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        <h2>Welcome to the Cat Adoption Center</h2>
+        <p>Find your purr-fect companion today!</p>
+    </section>
+
+    <section id="cats" class="cats-section">
+        <h2>Meet Our Cats</h2>
+        <div class="cat-list">
+            <div class="cat-item">
+                <img src="11.jpeg" alt="Fluffy">
+                <div class="cat-info">
+                    <h3>Fluffy</h3>
+                    <p>Age: 2 years</p>
+                    <p>Breed: Persian</p>
+                    <a href="formull.html" class="btn">Adopt</a>
+                </div>
+            </div>
+            <div class="cat-item">
+                <img src="  12.jpeg" alt="Mittens">
+                <div class="cat-info">
+                    <h3>Mittens</h3>
+                    <p>Age: 1 year</p>
+                    <p>Breed: Maine Coon</p>
+                    <a href="formull.html" class="btn">Adopt</a>
+                </div>
+            </div>
+            <div class="cat-item">
+                <img src="13.jpeg" alt="Whiskers">
+                <div class="cat-info">
+                    <h3>Whiskers</h3>
+                    <p>Age: 3 years</p>
+                    <p>Breed: Siamese</p>
+                    <a href="formull.html" class="btn">Adopt</a>
+                </div>
+            </div>
+            <div class="cat-item">
+                <img src="14.jpeg" alt="Shadow">
+                <div class="cat-info">
+                    <h3>Shadow</h3>
+                    <p>Age: 4 years</p>
+                    <p>Breed: British Shorthair</p>
+                    <a href="formull.html" class="btn">Adopt</a>
+                </div>
+            </div>
+            <div class="cat-item">
+                <img src="15.jpeg" alt="Bella">
+                <div class="cat-info">
+                    <h3>Bella</h3>
+                    <p>Age: 2 years</p>
+                    <p>Breed: Ragdoll</p>
+                    <a href="formull.html" class="btn">Adopt</a>
+                </div>
+            </div>
+            <div class="cat-item">
+                <img src="16.jpeg" alt="Luna">
+                <div class="cat-info">
+                    <h3>Luna</h3>
+                    <p>Age: 1 year</p>
+                    <p>Breed: Scottish Fold</p>
+                    <a href="formull.html" class="btn">Adopt</a>
+                </div>
+            </div>
+            <div class="cat-item">
+                <img src="17.jpeg" alt="Simba">
+                <div class="cat-info">
+                    <h3>Simba</h3>
+                    <p>Age: 3 years</p>
+                    <p>Breed: Bengal</p>
+                    <a href="formull.html" class="btn">Adopt</a>
+                </div>
+            </div>
+            <div class="cat-item">
+                <img src="18.jpeg" alt="Oreo">
+                <div class="cat-info">
+                    <h3>Oreo</h3>
+                    <p>Age: 2 years</p>
+                    <p>Breed: American Shorthair</p>
+                    <a href="formull.html" class="btn">Adopt</a>
+                </div>
+            </div>
+            <div class="cat-item">
+                <img src="19.jpeg" alt="Nala">
+                <div class="cat-info">
+                    <h3>Nala</h3>
+                    <p>Age: 1 year</p>
+                    <p>Breed: Siberian</p>
+                    <a href="formull.html" class="btn">Adopt</a>
+                </div>
+            </div>
+            <div class="cat-item">
+                <img src="20.jpeg" alt="Tiger">
+                <div class="cat-info">
+                    <h3>Tiger</h3>
+                    <p>Age: 4 years</p>
+                    <p>Breed: Abyssinian</p>
+                    <a href="formull.html" class="btn">Adopt</a>
+                </div>
+            </div>
+            <!-- Add more cat items as needed -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>Email: info@catbreeds.com</p>
+            <p>Phone: +1 (123) 456-7890</p>
+        </div>
+        <div class="additional-info">
+            <h3>Additional Information</h3>
+            <p>Address: 123 Cat Street, Meowville</p>
+            <p>Hours: Monday - Friday, 9:00 AM - 5:00 PM</p>
+        </div>
+    </footer>
+</body>
+</html>
